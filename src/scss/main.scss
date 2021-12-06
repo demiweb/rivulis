@@ -1,0 +1,26 @@
+@import "components/vars";
+@import "components/typography";
+@import "components/assist";
+@import "components/layout";
+@import "components/fonts";
+
+// Common
+// @import "components/common/video-block";
+@import "components/common/forms";
+@import "components/common/modals";
+
+// Sections
+@import "components/sections/first-screen-section";
+@import "components/sections/about-section";
+@import "components/sections/get-started-section";
+@import "components/sections/how-to-use-section";
+@import "components/sections/learn-section";
+@import "components/sections/faq-section";
+@import "components/sections/contacts-section";
+@import "components/sections/lang-select-section";
+@import "components/sections/hero";
+@import "components/sections/irrigation-technology";
+@import "components/sections/drip-technology";
+@import "components/sections/products";
+@import "components/sections/brochure";
+@import "components/sections/solution";

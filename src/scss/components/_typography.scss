@@ -1,0 +1,32 @@
+.reelview-tpg{
+	font-size: 18px;
+	line-height: 1.388;
+	font-family: var(--main-font);
+
+	@media screen and (max-width: 575px){
+		font-size: 12px;
+		line-height: 1.333;
+	}
+}
+
+.section-caption{
+	margin-bottom: 30px;
+
+	.sc-title{
+		font-size: 25px;
+		line-height: 1.12;
+		font-weight: bold;
+		color: var(--primary);
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+
+	@media screen and (max-width: 575px){
+		margin-bottom: 15px;
+
+		.sc-title{
+			font-size: 18px;
+			line-height: 21px;
+		}
+	}
+}

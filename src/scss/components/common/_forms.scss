@@ -1,0 +1,75 @@
+.form{
+	.input-field,
+	textarea{
+		border: 1px solid var(--primary);
+		appearance: none;
+		background: #fff;
+		border-radius: 3px;
+		flex: auto;
+		height: 38px;
+		font-size: 14px;
+		color: var(--primary);
+		font-family: var(--main-font);
+		padding: 0 11px;
+		outline: none !important;
+		transition: all var(--t);
+		width: 100%;
+		appearance: none;
+		font-weight: 600;
+		// max-width: 260px;
+
+		&::placeholder{
+			color: var(--primary);
+			opacity: 1;
+		}
+	}
+
+	textarea{
+		height: 143px;
+		resize: none;
+		width: 100%;
+		padding: 11px;
+		display: block;
+	}
+}
+
+.checkbox,
+.wpcf7-acceptance{
+	.fake-label,
+	.wpcf7-list-item-label{
+		padding-left: 37px;
+		font-size: 14px;
+		line-height: 26px;
+		font-weight: bold;
+		position: relative;
+		cursor: pointer;
+		display: block;
+		color: var(--primary);
+
+		&:before{
+			content: '';
+			display: block;
+			width: 26px;
+			height: 26px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			border: 1px solid var(--primary);
+			transition: all var(--t);
+			box-sizing: border-box;
+		}
+
+		@media screen and (max-width: 575px){
+			font-size: 12px;
+			line-height: 15px;
+		}
+	}
+
+	input:checked + .fake-label,
+	input:checked + .wpcf7-list-item-label{
+		&:before{
+			border-width: 8px;
+			background: var(--text-color);
+		}
+	}
+}

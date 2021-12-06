@@ -1,0 +1,21 @@
+:root{
+	// Fonts
+	--main-font:  'MyriadPro', 'Myriad Pro', Arial, sans-serif;
+	--second-font: 'MyriadPro', 'Myriad Pro', Arial, sans-serif;
+
+	// Colors
+	--green: #008A36;
+
+	// Params
+	--body-bg: #fff; // site background
+	--t: .3s; // animation duration
+	--r: 0; // default border radius
+	--shadow: 0 5px 25px rgba(#000, .1);
+
+	--text-color: #565655;
+	--text-light: #565655;
+	--text-dark: #565655;
+
+	--primary: var(--green);
+	--accent: var(--green);
+}

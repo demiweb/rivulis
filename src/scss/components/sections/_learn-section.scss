@@ -1,0 +1,108 @@
+.learn-section{
+	padding: 80px 0 194px;
+	text-align: center;
+
+	.section-caption{
+		margin-bottom: 34px;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 991px){
+		padding: 40px 0 80px;
+	}
+}
+
+.video-select-block{
+	position: relative;
+	max-width: 278px;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--text-color);
+
+	// .block-select,
+	.custom-select{
+		width: 100%;
+		min-width: 278px;
+		height: 50px;
+		cursor: pointer;
+
+		// select{
+		// 	width: 100%;
+		// 	height: 50px;
+		// 	background: #fff url(../../img/icons/arrow-down-gray.png) no-repeat top 50% right 18px;
+		// 	border: 1px solid rgba(#000, .45);
+		// 	box-shadow: none;
+		// 	appearance: none;
+		// 	border-radius: 6px;
+		// 	font-size: 15px;
+		// 	text-align: center;
+		// 	font-weight: bold;
+		// 	font-family: inherit;
+		// 	color: var(--text-color);
+		// 	cursor: pointer;
+		// 	line-height: 2;
+		// }
+
+		.current-value{
+			height: 48px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.block-play-btn{
+		position: absolute;
+		top: 0;
+		left: calc(100% + 25px);
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: var(--primary);
+		border: 1px solid var(--primary);
+		box-shadow: none;
+		appearance: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 25px;
+			height: 25px;
+			background: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3E%3Cpath d='M25 12.5 4 25V0l21 12.5Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center / contain;
+			transform: translateX(8%);
+		}
+	}
+
+	&.white{
+		.block-select{
+			select{
+				border-color: #000;
+			}
+		}
+
+		.block-play-btn{
+			border-color: #fff;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 320px;
+
+		.custom-select{
+			flex: auto;
+			margin-right: 25px;
+			min-width: 175px;
+		}
+
+		.block-play-btn{
+			position: static;
+			flex: none;
+		}
+	}
+}

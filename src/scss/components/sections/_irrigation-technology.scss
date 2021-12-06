@@ -1,0 +1,124 @@
+.irrigation-technology {
+  margin: 117px 0 0;
+}
+
+.irrigation-technology__wrapper {
+  > span {
+    display: block;
+    font-size: 35px;
+    line-height: 33px;
+    font-weight: 700;
+    max-width: 845px;
+    margin: 0 auto 107px;
+    text-transform: uppercase;
+
+    span {
+      font-weight: 400;
+      display: inline;
+    }
+  }
+}
+
+.technology-slider {
+  .technology-slider__wrapper {
+
+    .technology-slider__slide {
+      min-height: 455px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      img {
+        width: 259px;
+        height: 259px;
+        transition: all .4s ease;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      > span {
+        font-size: 35px;
+        line-height: 28px;
+        display: block;
+        margin: 0;
+        position: relative;
+        color: #008A36;
+
+        &:before {
+          content: '';
+          margin: 0 auto 13px;
+          width: 2px;
+          display: block;
+          height: 55px;
+          border-left: 2px solid #008A36;
+        }
+      }
+    }
+
+    .technology-slider__slide.swiper-slide-active {
+      justify-content: center;
+      img {
+        width: 455px;
+        height: 455px;
+
+      }
+
+      span {
+        display: none;
+      }
+
+      &:after {
+        content: '';
+        margin: 0 auto;
+        width: 2px;
+        display: block;
+        height: 55px;
+        border-left: 2px solid #008A36;
+      }
+    }
+  }
+}
+
+.slider__accordions {
+  width: 100%;
+  background: #008A36;
+
+  .technology {
+    height: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .technology.active {
+    height: 547px;
+    opacity: 1;
+    transition: all .7s ease;
+    text-align: center;
+
+    &:before {
+      content: '';
+    }
+
+    > span {
+      font-size: 50px;
+      line-height: 28px;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 23px;
+      color: #fff;
+
+    }
+
+    > p {
+      font-size: 24px;
+      line-height: 30px;
+      color: #fff;
+      margin: 0 auto 20px;
+      max-width: 951px;
+    }
+  }
+}

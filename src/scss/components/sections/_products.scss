@@ -1,0 +1,43 @@
+.products {
+  padding: 95px 0 150px;
+  background: #DFE0DF;
+}
+
+.products__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.products__card {
+  width: 340px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  span {
+    display: block;
+    margin: 10px 0;
+    font-size: 30px;
+    line-height: 28px;
+    color: #008A36;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #565655;
+  }
+
+  a {
+    font-size: 25px;
+    font-weight: 700;
+    color: #565655;
+    text-decoration: underline;
+  }
+}
