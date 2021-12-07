@@ -2169,9 +2169,10 @@ footer .contact-us-link {
   }
   .products__card .card__img {
     height: 286px;
+    width: 100%;
   }
   .products__card .card__img img {
-    width: auto;
+    width: 100%;
     height: 100%;
     -o-object-fit: fill;
        object-fit: fill;
