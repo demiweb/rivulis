@@ -2,7 +2,6 @@
   height: 768px;
   position: relative;
 
-
   .container {
     height: 100%;
   }
@@ -52,6 +51,36 @@
 
     span {
       font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .drip-technology {
+    height: 592px;
+  }
+
+  .drip-technology-bg {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .drip-technology__wrapper {
+    justify-content: flex-start;
+    > span {
+      margin-top: 173px;
+      font-size: 40px;
+      line-height: 35px;
+      span {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      margin-top: 16px;
+      font-size: 18px;
+      line-height: 25px;
     }
   }
 }

@@ -2,11 +2,19 @@
   height: 524px;
   background: #118A36;
   position: relative;
+
+  .brochure__wrapper {
+    height: 100%;
+  }
 }
 
 .brochure__content {
-  padding-top: 198px;
-  margin-left: 325px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   > span {
     font-size: 50px;
@@ -30,6 +38,7 @@
   bottom: 0;
   width: 50vw;
   opacity: 73%;
+
   > img {
     width: 100%;
     height: 100%;
@@ -103,5 +112,61 @@
   svg {
     width: 45px;
     height: 45px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .brochure {
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .brochure {
+    height: 269px;
+  }
+
+  .brochure__content {
+    width: 100%;
+
+    > span {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 17px;
+    }
+
+    > div {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .brochure__select {
+    width: 220px;
+    height: 46px;
+
+    .current__value {
+      margin-right: 30px;
+    }
+
+    &:after {
+      right: 10px;
+    }
+  }
+
+  .brochure__select.open {
+    .select__list {
+      top: 46px;
+    }
+  }
+
+
+  .brochure__download {
+    margin: 16px 0 0 0;
+  }
+
+
+  .brochure__img {
+    display: none;
   }
 }

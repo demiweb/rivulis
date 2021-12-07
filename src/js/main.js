@@ -1,11 +1,21 @@
 const technologySlider = new Swiper('.technology-slider', {
     direction: 'horizontal',
     loop: false,
-    slidesPerView: 3,
     centeredSlides: true,
+    initialSlide: 1,
 
     on: {
         init: openAccordion,
+    },
+
+    breakpoints: {
+        1200: {
+            slidesPerView: 3,
+
+        },
+        320: {
+            slidesPerView: 2,
+        }
     }
 });
 
@@ -13,8 +23,8 @@ technologySlider.on('slideChange', openAccordion);
 
 technologySlider.on('mount', openAccordion);
 
+// Функция плавного открытия аккордеона
 function openAccordion() {
-    console.log(this)
     let content = [...document.querySelectorAll('.slider__accordions .technology')][this.activeIndex]
 
     if (content.style.maxHeight) {
@@ -26,6 +36,7 @@ function openAccordion() {
 }
 
 
+// Кастомный селект
 const selectBrochure = document.querySelectorAll('.brochure__select')
 
 if (!selectBrochure.length) {
