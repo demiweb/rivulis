@@ -6,17 +6,27 @@
 .products__wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .products__card {
   width: 340px;
   text-align: center;
+  padding: 10px;
 
-  img {
+
+  .card__img {
     width: 100%;
-    height: auto;
+    height: 364px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
+
 
   span {
     display: block;
