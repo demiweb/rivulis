@@ -1640,6 +1640,7 @@ footer .contact-us-link {
 .hero {
   height: auto;
   position: relative;
+  margin: -10px 0 0;
 }
 
 .hero-bg {
@@ -2382,7 +2383,6 @@ footer .contact-us-link {
 .solution {
   margin: 147px 0 120px;
   padding: 0 20.57%;
-  border-bottom: 1px solid #707070;
 }
 
 .solution__wrapper > span {
@@ -2395,41 +2395,28 @@ footer .contact-us-link {
 }
 
 .solution__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 89px 71px;
+}
+.solution__list .solution__item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.solution__list .solution__column {
-  width: 47%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.solution__list .solution__item > div {
+  margin-left: 30px;
 }
-.solution__list .solution__column .solution__item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 60px;
-}
-.solution__list .solution__column .solution__item > div {
-  margin-left: 41px;
-}
-.solution__list .solution__column .solution__item > div a {
+.solution__list .solution__item > div a {
   font-size: 20px;
   font-weight: 700;
   display: block;
@@ -2437,12 +2424,12 @@ footer .contact-us-link {
   text-decoration: none;
   color: var(--primary);
 }
-.solution__list .solution__column .solution__item > div p {
+.solution__list .solution__item > div p {
   color: var(--text-color);
   font-size: 20px;
   line-height: 23px;
 }
-.solution__list .solution__column .solution__item img {
+.solution__list .solution__item img {
   width: 10.4166666667vw;
   height: 10.4166666667vw;
 }
