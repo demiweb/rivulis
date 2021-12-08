@@ -35,6 +35,10 @@ function openAccordion() {
         content.style.maxHeight = content.scrollHeight + 'px'
     }
 }
+window.addEventListener('resize', function () {
+    let content = [...document.querySelectorAll('.slider__accordions .technology')][technologySlider.activeIndex]
+    content.style.maxHeight = content.scrollHeight + 'px'
+})
 
 
 // Кастомный селект
