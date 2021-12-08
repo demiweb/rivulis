@@ -7,6 +7,7 @@ const technologySlider = new Swiper('.technology-slider', {
     on: {
         init: openAccordion,
     },
+    slideToClickedSlide: true,
 
     breakpoints: {
         1200: {

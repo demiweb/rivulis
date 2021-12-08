@@ -87,6 +87,8 @@
     .card__img {
       height: 286px;
       width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
 
       img {
         width: 100%;

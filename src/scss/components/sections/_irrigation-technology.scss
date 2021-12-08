@@ -149,6 +149,14 @@
     top: 45%;
   }
 
+  .irrigation-technology__wrapper {
+    > span {
+      text-align: center;
+      padding: 0 20px;
+    }
+  }
+
+
   .technology-slider {
     .technology-slider__wrapper {
       .technology-slider__slide {

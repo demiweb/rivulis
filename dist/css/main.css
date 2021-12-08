@@ -1902,6 +1902,11 @@ footer .contact-us-link {
     top: 45%;
   }
 
+  .irrigation-technology__wrapper > span {
+    text-align: center;
+    padding: 0 20px;
+  }
+
   .technology-slider .technology-slider__wrapper .technology-slider__slide div {
     display: block;
     width: 259px;
@@ -2055,6 +2060,7 @@ footer .contact-us-link {
     margin-top: 173px;
     font-size: 40px;
     line-height: 35px;
+    padding: 0 20px;
   }
   .drip-technology__wrapper > span span {
     font-size: 40px;
@@ -2063,6 +2069,7 @@ footer .contact-us-link {
     margin-top: 16px;
     font-size: 18px;
     line-height: 25px;
+    padding: 0 20px;
   }
 }
 .products {
@@ -2170,6 +2177,8 @@ footer .contact-us-link {
   .products__card .card__img {
     height: 286px;
     width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
   .products__card .card__img img {
     width: 100%;
@@ -2281,7 +2290,8 @@ footer .contact-us-link {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
-  margin-right: 50px;
+  width: 100%;
+  text-align: center;
 }
 .brochure__select .select__list {
   display: none;
@@ -2289,10 +2299,9 @@ footer .contact-us-link {
 .brochure__select .select__list .option:hover {
   background: rgba(0, 0, 0, 0.1);
 }
-.brochure__select:after {
-  content: url("../../../img/svg/arrow-down.svg");
-  position: absolute;
-  right: 28px;
+.brochure__select > svg {
+  float: right;
+  margin-right: 10px;
 }
 
 .brochure__select.open .select__list {
@@ -2353,9 +2362,6 @@ footer .contact-us-link {
   .brochure__select {
     width: 220px;
     height: 46px;
-  }
-  .brochure__select .current__value {
-    margin-right: 30px;
   }
   .brochure__select:after {
     right: 10px;

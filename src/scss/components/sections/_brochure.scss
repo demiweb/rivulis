@@ -65,7 +65,8 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
-    margin-right: 50px;
+    width: 100%;
+    text-align: center;
   }
 
   .select__list {
@@ -78,11 +79,11 @@
     }
   }
 
-  &:after {
-    content: url("../../../img/svg/arrow-down.svg");
-    position: absolute;
-    right: 28px;
+  > svg {
+    float: right;
+    margin-right: 10px;
   }
+
 }
 
 .brochure__select.open {
@@ -144,10 +145,6 @@
   .brochure__select {
     width: 220px;
     height: 46px;
-
-    .current__value {
-      margin-right: 30px;
-    }
 
     &:after {
       right: 10px;
