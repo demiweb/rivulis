@@ -1,6 +1,7 @@
 .solution {
-  margin: 147px 0 120px;
-  padding: 0 calc(41.14% / 2);
+  margin: 147px auto 120px;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 .solution__wrapper {
@@ -15,14 +16,25 @@
 }
 
 .solution__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  grid-gap: 89px 71px;
+  position: relative;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: -126px;
+
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
 
   .solution__item {
+    float: left;
     display: flex;
     align-items: flex-start;
+    width: 45%;
+    margin-top: 126px;
+    margin-right: 5%;
+    margin-left: 0;
 
     > div {
       margin-left: 30px;
@@ -44,6 +56,7 @@
     }
 
     img {
+      border-radius: 100%;
       width: calc(200px * (100vw / 1920px));
       height: calc(200px * (100vw / 1920px));
     }
@@ -59,54 +72,26 @@
       line-height: 45px;
     }
   }
-
-  .solution__list {
-    flex-direction: column;
-
-    .solution__column {
-      width: 100%;
-
-      .solution__item {
-        img {
-          width: 200px;
-          height: 200px;
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1400px) {
-  .solution__list {
-    flex-direction: column;
-
-    .solution__column {
-      width: 100%;
-
-      .solution__item {
-        img {
-          width: 150px;
-          height: 150px;
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1200px) {
   .solution__list {
+    display: flex;
     flex-direction: column;
+    margin: 0;
 
-    .solution__column {
-      width: 100%;
 
       .solution__item {
-        flex-direction: column;
+        width: 100%;
+        display: flex;
         align-items: center;
+        margin-top: 20px;
 
         > div {
-          margin: 21px 0 0;
-
+          margin-left: 20px;
           p {
             font-size: 18px;
             line-height: 21px;
@@ -118,11 +103,10 @@
           height: 153px;
         }
       }
-    }
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
   .solution {
     margin: 67px 0;
     padding: 0 calc(64px / 2);
@@ -138,23 +122,23 @@
 
 
   .solution__list {
-    flex-direction: column;
-
-    .solution__column {
-      width: 100%;
 
       .solution__item {
         flex-direction: column;
         align-items: center;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        padding: 0 30px;
 
         > div {
+          margin: 21px 0 0;
         }
 
         img {
-          width: 200px;
-          height: 200px;
+          width: 153px;
+          height: 153px;
         }
-      }
+
     }
   }
 }
